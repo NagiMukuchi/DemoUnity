@@ -15,6 +15,7 @@ public class Blink : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(spriteRenderer.enabled);
         spriteRenderer.enabled = !spriteRenderer.enabled;
     }
 }

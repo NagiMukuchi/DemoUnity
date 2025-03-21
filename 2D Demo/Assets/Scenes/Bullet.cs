@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float flySpeed;
+    public float flySpeed = 20;
 
     // Update is called once per frame
     void Update()
@@ -14,4 +14,5 @@ public class Bullet : MonoBehaviour
         transform.position = newPosition;
     }
 }
+
 
