@@ -15,7 +15,7 @@ public class Blinking : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(spriteRenderer.enabled);
+        //Debug.Log(spriteRenderer.enabled);
         spriteRenderer.enabled = !spriteRenderer.enabled;
     }
 }
