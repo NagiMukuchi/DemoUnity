@@ -6,23 +6,31 @@ using UnityEngine;
 public class ShipShooting : MonoBehaviour
 {
     public GameObject bulletPrefab;
+    public Vector3 bulletOffset = Vector3.zero; // Offset for bullets (useful for player shooting)
 
     public float shootInterval = 0.5f;
     private float lastBulletTime = 0;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)&& Time.time - lastBulletTime > shootInterval)
+        if (Input.GetMouseButton(0)) // Allows continuous firing while holding the button
         {
-            Instantiate(bulletPrefab, transform.position, transform.rotation);
+            UpdateFiring();
+        }
+    }
+
+    private void UpdateFiring()
+    {
+        if (Time.time - lastBulletTime > shootInterval)
+        {
+            ShootBullet();
             lastBulletTime = Time.time;
         }
     }
 
+    private void ShootBullet()
+    {
+        Instantiate(bulletPrefab, transform.position + bulletOffset, transform.rotation);
+    }
 }
