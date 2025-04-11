@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 4261539238662953254}
   - component: {fileID: 7108310263983633493}
   - component: {fileID: 1514392625944982142}
-  m_Layer: 0
+  - component: {fileID: 8840995002223295122}
+  m_Layer: 6
   m_Name: Machine Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,3 +100,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flySpeed: 20
   lifespan: 2
+--- !u!50 &8840995002223295122
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2379282088414085869}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
