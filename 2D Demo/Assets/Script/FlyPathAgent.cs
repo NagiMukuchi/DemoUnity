@@ -1,30 +1,31 @@
-//using System.Collections;
-//using System.Collections.Generic;
-//using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-//public class FlyPathAgent : MonoBehaviour
-//{
-//    public FlyPath flyPath;
-//    public float flySpeed;
-//    private int nextIndex = 1;
+public class FlyPathAgent : MonoBehaviour
+{
+    public FlyPath flyPath;
+    public float flySpeed;
+    private int nextIndex = 1;
 
-//    void Start() => transform.position = flypath[0];
+    void Start() => transform.position = flyPath[0];
 
-//    void Update()
-//    {
-//        if (flyPath == null) return;
-//        if (nextIndex >= flyPath.waypoints.Length) ) return;
-//        if (transform.position != flyPath[nextIndex])
-//        {
-//            FlyToNextWaypoint();
-//        }
-//        else
-//        {
-//            nextIndex++;
-//        }
-//    }
+    void Update()
+    {
+        if (flyPath == null) 
+            return;
+        if (nextIndex >= flyPath.waypoints.Length) 
+                return;
+        if (transform.position != flyPath[nextIndex])
+        {
+            FlyToNextWaypoint();
+        }
+        else
+        {
+            nextIndex++;
+        }
+    }
 
-//    private void FlyToNextWaypoint()
-//        => transform.position = Vector3.MoveTowards(transform.position, flyPath[nextIndex], flySpeed * Time.deltaTime);
-//}
-
+    private void FlyToNextWaypoint()
+        => transform.position = Vector3.MoveTowards(transform.position, flyPath[nextIndex], flySpeed * Time.deltaTime);
+}

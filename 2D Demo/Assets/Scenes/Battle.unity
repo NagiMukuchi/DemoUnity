@@ -712,6 +712,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1890950617268114531, guid: c21cf8dbecd9ca3409286df2160f55e0,
+        type: 3}
+      propertyPath: flyPath
+      value: 
+      objectReference: {fileID: 708017884}
     - target: {fileID: 3298889073801662294, guid: c21cf8dbecd9ca3409286df2160f55e0,
         type: 3}
       propertyPath: health
@@ -1303,6 +1308,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WayPoint (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3214382450036745204, guid: 2659a0a3dde40484e81a739757a3a81f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4273481814716288733, guid: 2659a0a3dde40484e81a739757a3a81f,
         type: 3}
@@ -2050,6 +2060,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WayPoint (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3214382450036745204, guid: 2659a0a3dde40484e81a739757a3a81f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4273481814716288733, guid: 2659a0a3dde40484e81a739757a3a81f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2279,6 +2294,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WayPoint (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3214382450036745204, guid: 2659a0a3dde40484e81a739757a3a81f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4273481814716288733, guid: 2659a0a3dde40484e81a739757a3a81f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2441,6 +2461,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WayPoint (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3214382450036745204, guid: 2659a0a3dde40484e81a739757a3a81f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4273481814716288733, guid: 2659a0a3dde40484e81a739757a3a81f,
         type: 3}
@@ -3214,6 +3239,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WayPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 3214382450036745204, guid: 2659a0a3dde40484e81a739757a3a81f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4273481814716288733, guid: 2659a0a3dde40484e81a739757a3a81f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3446,6 +3476,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WayPoint (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3214382450036745204, guid: 2659a0a3dde40484e81a739757a3a81f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4273481814716288733, guid: 2659a0a3dde40484e81a739757a3a81f,
         type: 3}
@@ -3762,6 +3797,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WayPoint (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3214382450036745204, guid: 2659a0a3dde40484e81a739757a3a81f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4273481814716288733, guid: 2659a0a3dde40484e81a739757a3a81f,
         type: 3}
