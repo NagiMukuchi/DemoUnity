@@ -9,6 +9,9 @@ public class BattleFlow : MonoBehaviour
     public GameObject gameWinUI;
     public PlayerHealth playerHealth;
     public GameObject bgMusic;
+    public EnemySpawner spawner;
+
+    public int living;
 
     private void Start()
     {
@@ -19,18 +22,25 @@ public class BattleFlow : MonoBehaviour
 
     private void Update()
     {
-        if (EnemyHealth.LivingEnemyCount <= 0)
+        living = EnemyHealth.LivingEnemyCount;
+        if (spawner.CreateAllEnemy && EnemyHealth.LivingEnemyCount <= 0)
         {
-            OnGameWin();
+            Invoke(nameof(OnGameWin), 1);
         }
     }
 
     private void OnGameWin()
     {
-        gameWinUI.SetActive(true);
-        bgMusic.SetActive(false);
-        playerHealth.gameObject.SetActive(false);
+        if (playerHealth.healthPoint > 0)
+        {
+
+            gameWinUI.SetActive(true);
+            bgMusic.SetActive(false);
+            playerHealth.gameObject.SetActive(false);
+        }
     }
+
+
 
     private void OnGameOver()
     {
