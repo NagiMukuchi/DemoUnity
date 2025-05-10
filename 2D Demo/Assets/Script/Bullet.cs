@@ -23,7 +23,19 @@ public class Bullet : MonoBehaviour
             enemy.TakeDamage(damage);
         }
         Destroy(gameObject);
+        
+
+        var boss = collision.GetComponent<BossHealth>();
+        if (boss != null)
+        {
+            boss.TakeDamage(damage);
+        }
+        Destroy(gameObject);
+        
+
     }
+
+
 
 }
 

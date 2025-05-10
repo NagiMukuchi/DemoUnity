@@ -6,10 +6,10 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     public GameObject explosionPrefab;
-    public int defaultHealthPoint;
+    public int defaultHealthPoint = 6;
     public System.Action onDead;
     public System.Action onHealthChanged;
-    public int healthPoint;
+    public int healthPoint = 6;
 
     private void Start()
     {

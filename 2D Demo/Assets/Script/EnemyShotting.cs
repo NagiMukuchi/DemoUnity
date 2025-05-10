@@ -1,20 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
-using JetBrains.Annotations;
 using UnityEngine;
 
-public class ShipShooting : MonoBehaviour
+public class EnemyShotting : MonoBehaviour
 {
     public GameObject bulletPrefab;
+    public GameObject bulletPrefab2;
+
     public Vector3 bulletOffset = Vector3.zero; // Offset for bullets (useful for player shooting)
 
-    public float shootInterval = 0.5f;
+    public float shootInterval = 3;
     private float lastBulletTime = 0;
 
     // Update is called once per frame
     void Update()
     {
-            UpdateFiring();
+        UpdateFiring();
+        
     }
 
     private void UpdateFiring()
@@ -22,6 +24,7 @@ public class ShipShooting : MonoBehaviour
         if (Time.time - lastBulletTime > shootInterval)
         {
             ShootBullet();
+            ShootBullet2();
             lastBulletTime = Time.time;
         }
     }
@@ -29,5 +32,11 @@ public class ShipShooting : MonoBehaviour
     private void ShootBullet()
     {
         Instantiate(bulletPrefab, transform.position + bulletOffset, transform.rotation);
+    }
+
+
+    private void ShootBullet2()
+    {
+        Instantiate(bulletPrefab2, transform.position + bulletOffset, transform.rotation);
     }
 }
